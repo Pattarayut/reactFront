@@ -1,0 +1,24 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { Toaster } from "react-hot-toast";
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <Toaster
+      toastOptions={{
+        className: "",
+        duration: 800,
+        success: {
+          duration: 1200,
+        },
+        error: {
+          duration: 1200,
+        },
+      }}
+    />
+
+    <App />
+  </React.StrictMode>
+);
